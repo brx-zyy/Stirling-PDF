@@ -54,6 +54,7 @@ class PipelineDirectoryProcessorOutputFilenameTraversalTest {
     @Test
     void outputFilenamePatternCanEscapeFinishedFolder() throws Exception {
         PipelineConfig config = new PipelineConfig();
+        config.setName("test-pipeline");
         config.setOutputPattern("../../escaped");
 
         Resource output =
